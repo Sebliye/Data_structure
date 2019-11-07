@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //using for loop
+    // function checkForsum(arr,num){
+    //     let sum=arr[0];
+    //     for(let i=1;i<arr.length;i++){
+    //         sum+=arr[i];
+    //         if(num===sum){
+    //             return true;
+    //         }
+    //         return false;
+    //     }
+    // }
+    // console.log(checkForsum([1,2,3],0));
+//using has method
+function checkForsum(arr,num){
+    let myset=new Set(arr);
+   let output= myset.has(num);
+       return output;
+}
+console.log(checkForsum([1,2,3],9));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
